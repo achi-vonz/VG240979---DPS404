@@ -1,0 +1,140 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4e1; /* Beige claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #000; /* Texto en negro para todo el cuerpo */
+}
+
+.container {
+    width: 60%;
+    background: #fff8e1; /* Beige más oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h2 {
+    color: #000; /* Color de título en negro */
+}
+
+button {
+    background: linear-gradient(45deg, #8d6e63, #5d4037); /* Beige y marrón oscuro */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #5d4037, #3e2723); /* Contraste con marrón más oscuro */
+    transform: scale(1.05);
+}
+
+button:active {
+    animation: pulse 0.2s ease-in-out;
+}
+
+input, select {
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 85%;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #000; /* Texto en negro */
+}
+
+input[type="password"] {
+    background-color: #f9f9f9;
+    color: #000; /* Texto en negro */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+/* Contador */
+.counter {
+    background: #ffe0b2; /* Beige suave */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.counter button {
+    background: linear-gradient(45deg, #d7ccc8, #bcaaa4); /* Beige con tono cálido */
+}
+
+.counter button:hover {
+    background: linear-gradient(45deg, #bcaaa4, #8d6e63);
+}
+
+/* Conversor de temperatura */
+.temperature {
+    background: #ffccbc; /* Beige suave con toque cálido */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.temperature button {
+    background: linear-gradient(45deg, #d7ccc8, #bcaaa4);
+}
+
+.temperature button:hover {
+    background: linear-gradient(45deg, #bcaaa4, #8d6e63);
+}
+
+/* Login */
+.login-form {
+    background: #ffebee; /* Beige rosado */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    background-color: #fff3e0; /* Beige suave para campos de texto */
+    border: 1px solid #d7ccc8; /* Gris claro */
+    color: #000; /* Texto en negro */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    button {
+        width: 90%;
+        font-size: 14px;
+    }
+    
+    input, select {
+        width: 100%;
+    }
+}
